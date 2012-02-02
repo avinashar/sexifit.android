@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip">
+s    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        >
+		<RelativeLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent">
+		    <TextView
+		        android:id="@+id/exercise"
+		        android:text="Barbell Bench Press"
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:singleLine="true"
+		        android:ellipsize="marquee"
+        		android:fadingEdge="horizontal"
+        		android:marqueeRepeatLimit="marquee_forever"
+		        />
+		    <TextView
+		        android:id="@+id/weight"
+		        android:text="225"
+		        android:layout_below="@id/exercise"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        />
+		    <TextView
+		   		android:id="@+id/unit"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/weight"
+		        android:layout_alignTop="@id/weight"
+		        android:text=" lbs x " 
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        />
+		    <TextView
+		    	android:id="@+id/reps"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/unit"
+		        android:layout_alignTop="@id/unit"
+		        android:text="10" 
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        />
+		    <TextView
+		    	android:id="@+id/time"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/reps"
+		        android:layout_alignTop="@id/reps" 
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        />
+		</RelativeLayout>
+    </LinearLayout>
+       
+</LinearLayout>
